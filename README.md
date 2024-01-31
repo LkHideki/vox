@@ -1,4 +1,4 @@
-# Vox.py
+# vox
 
 Este é um script Python que permite a interação com os modelos GPT-3.5 e 4. O script aceita argumentos de linha de comando e também permite a interação através de um prompt de entrada.
 
