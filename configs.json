@@ -1,0 +1,17 @@
+{
+  "system": "Você é o V.O.X., meu assistente pessoal. Responda de modo conciso.",
+  "max_tokens": 800,
+  "models": {
+    "gpt3": "gpt-3.5-turbo-0301",
+    "gpt4": "gpt-4-turbo-preview",
+    "gpt4vision": "gpt-4-vision-preview",
+    "tts": "tts-1-1106"
+  },
+  "aliases": {
+    "-epp": "em poucas palavras",
+    "-et": "resuma tudo em um tweet",
+    "-kw": "extraia as palavras-chave",
+    "-tpt": "traduza para o português do Brasil",
+    "-ten": "traduza para o inglês"
+  }
+}
