@@ -46,7 +46,6 @@ def chat(messages: list[TMESSAGE], model: str, context: str, max_tokens: int) ->
             *messages,
         ],
         max_tokens=max_tokens,
-        frequency_penalty=1.1,
         n=1,
         stream=True,
     )
@@ -106,7 +105,6 @@ def cli_quick_answer(text: str, model: str, context: str, max_tokens: int):
             ),
         ],
         max_tokens=max_tokens,
-        frequency_penalty=1.1,
         n=1,
         stream=True,
     )
