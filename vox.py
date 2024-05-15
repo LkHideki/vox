@@ -128,10 +128,10 @@ if __name__ == "__main__":
 
     CONTEXT = settings["system"].strip()
     MAX_TOKENS = settings["max_tokens"]
-    MODEL: str = settings["models"]["gpt3"]
+    MODEL: str = settings["models"]["gpt4"]
     cli_args: list[str] = [x.strip() for x in sys.argv[1:]]
-    if "4" in cli_args:
-        MODEL = settings["models"]["gpt4"]
+    if "3" in cli_args:
+        MODEL = settings["models"]["gpt3"]
     if "v" in cli_args:
         MODEL = settings["models"]["gpt4vision"]
 
