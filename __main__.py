@@ -43,6 +43,8 @@ else:
             case ":4":
                 MODEL = settings["models"]["gpt4"]
                 print(f"<using {MODEL=}>")
+            case ":model":
+                print(f"<using {MODEL=}>")
             case ":c":
                 last_assistant_message = [
                     x["content"] for x in msgs if x["role"] == "assistant"
