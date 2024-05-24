@@ -19,9 +19,9 @@ As únicas dependências são:
 - `openai` (e ela tem suas próprias dependências) e
 - `pyperclip` (para o caso de mexer com a área de transferência).
 
-O script usa a api do GPT-4o por default, mas você pode iniciar a conversa com o 3.5 usando `python3 vox 3` e a conversa dura até um input "" ou ":q".
+O script usa a api do GPT-4o por default, mas você pode iniciar a conversa com o 3.5 usando `python3 <caminho até o diretório vox> 3` e a conversa dura até um input "" ou ":q".
 
-Você também pode especificar um argumento `-p` seguido de uma string com aspas para obter uma resposta rápida do modelo escolhido. Exemplo: `python3 vox 4 -p "Qual o seu nome?"`.
+Você também pode especificar um argumento `-p` seguido de uma string com aspas para obter uma resposta rápida do modelo escolhido. Exemplo: `python3 <caminho até o diretório vox> 4 -p "Qual o seu nome?"`.
 
 Se nenhum argumento de linha de comando for fornecido, o script entrará em um loop de entrada onde você pode digitar comandos:
 
