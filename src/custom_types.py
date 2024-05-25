@@ -9,11 +9,6 @@ TMESSAGE = (
     | openaitypes.ChatCompletionFunctionMessageParam
 )
 
-# TInput2 = {"type": _L["text"], "text": str} | {
-#     "type": _L["image_url"],
-#     "image_url": str,
-# }
-
 TInput = (
     dict[Literal["type"], Literal["texto"]]
     | dict[Literal["type"], Literal["image_url"]]
