@@ -138,7 +138,12 @@ class Client:
         self.messages.append(Client.format_input(final.strip(), role="assistant"))
 
 
-class Chat: ...
+class Chat:
+    """
+    Class that manages the chat with loops and handles inputs.
+    """
+
+    ...
 
 
 if __name__ == "__main__":
@@ -152,19 +157,3 @@ if __name__ == "__main__":
     )
 
     img = "/Users/hideki/vox/__testes/ue.png"
-
-    client.messages.append(
-        Client.format_input(
-            content="Descreva a paleta de cores da imagem. -epp",
-            typeof="img_url",
-            img_url="https://s2-oglobo.glbimg.com/jzgUNIeBajWtux_gog-p1Be6e74=/0x0:1200x694/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2022/Y/4/FRSLBtRomkvLSMbzcjSw/54599493-paola-carosela.jpg",
-        )
-    )
-
-    client.ask()
-
-    client.messages.append(
-        Client.format_input(content="Tá, agora resuma tudo num tweet.")
-    )
-
-    client.ask()
