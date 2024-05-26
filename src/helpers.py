@@ -38,6 +38,18 @@ class Client:
         img_url: str = "",
         role: str = "user",
     ):
+        """
+        Formats the input according to the specified type.
+
+        Args:
+            content (str): Content to be formatted.
+            typeof (Literal["img_url", "text"], optional): Type of content. Can be "img_url" for image or "text" for text. Default is "text".
+            img_url (str, optional): Image URL if the type is "img_url". Default is an empty string.
+            role (str, optional): Role of the content author. Default is "user".
+
+        Returns:
+            dict: Dictionary formatted with the appropriate structure for the specified content type.
+        """
         if typeof == "img_url":
             return {
                 "role": role,
@@ -95,7 +107,9 @@ class Client:
             json=payload,
         )
 
-        return response.json()["choices"][0]["message"]["content"]
+        assistant = response.json()["choices"][0]["message"]["content"]
+
+        return assistant
 
     def ask(self):
         res = self.__client.chat.completions.create(
@@ -122,6 +136,9 @@ class Client:
         print()
 
         self.messages.append(Client.format_input(final.strip(), role="assistant"))
+
+
+class Chat: ...
 
 
 if __name__ == "__main__":
