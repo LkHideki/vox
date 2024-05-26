@@ -11,6 +11,6 @@
     "-kw": "extraia as palavras-chave",
     "-tpt": "traduza para o português do Brasil",
     "-ten": "traduza para o inglês",
-    "-doc": "Leia e me retorne APENAS a documentação."
+    "-doc": "Leia e me retorne APENAS a documentação"
   }
 }
